@@ -14,7 +14,7 @@
     <div id="map"></div>
     <!-- Include the Google Maps JavaScript API -->
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdaU8_ne6j6jQ7qWm6ejSsaUBGMdYdUqc">
+    src="https://maps.googleapis.com/maps/api/js?key=API_Key">
     </script>
     <script>
       function initMap() {
