@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the size of the map */
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The map container -->
+    <div id="map"></div>
+    <!-- Include the Google Maps JavaScript API -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdaU8_ne6j6jQ7qWm6ejSsaUBGMdYdUqc">
+    </script>
+    <script>
+      function initMap() {
+        // The latitude and longitude of the point
+        var lat = 37.7749;
+        var lng = -122.4194;
+
+        // Create a new map and center it at the given latitude and longitude
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: {lat: lat, lng: lng}
+        });
+
+        // Add a marker to the map at the given latitude and longitude
+        var marker = new google.maps.Marker({
+          position: {lat: lat, lng: lng},
+          map: map
+        });
+      }
+    </script>
+    <!-- Call the initMap function when the page loads -->
+    <script async defer onload="initMap()">
+    </script>
+  </body>
+</html>
